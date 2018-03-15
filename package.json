@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jacekelgda/slack-app-dev-post/issues"
   },
-  "homepage": "https://github.com/jacekelgda/slack-app-dev-post#readme"
+  "homepage": "https://github.com/jacekelgda/slack-app-dev-post#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
