@@ -22,13 +22,15 @@
   "homepage": "https://github.com/jacekelgda/slack-app-dev-post#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "slack": "^11.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "dotenv": "^5.0.1",
     "eslint": "^4.18.2",
     "nodemon": "^1.17.2",
     "rimraf": "^2.6.2"

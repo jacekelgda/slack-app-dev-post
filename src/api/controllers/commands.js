@@ -1,11 +1,15 @@
 import express from 'express'
+import { postJobOpening } from '../services/slack'
 
 const router = new express.Router()
 
 router.all('/commands', async (req, res) => {
-    console.log(req.body)
-
-    res.status(200).send('Thanks.')
+    let status = 200
+    await postJobOpening(process.env.jobs_channel, req.body.text)
+        .catch(() => {
+            status = 503
+        })
+    res.status(status).send('Slash command completed.')
 })
 
 export default router

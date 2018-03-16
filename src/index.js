@@ -1,5 +1,7 @@
 import bodyParser from 'body-parser'
 import express from 'express'
+import { config } from 'dotenv'
+config()
 
 import api from './api'
 
